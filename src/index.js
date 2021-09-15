@@ -59,7 +59,7 @@ class Main extends Component{
   render(){
     return(
       <div>
-        <Title title = {'Task Header'}/>
+        <Title title = {'ToDos'}/>
         <List tasks = {['Mow the lawn','Walk the Dog']}/>
         <List tasks = {['hose the driveway','finish the laundry']}/>
       </div>
