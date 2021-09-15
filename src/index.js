@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import ReactDom from 'react-dom';
+import Main from './Components/Main';
 
 //const tasks = ['Take out the trash','Walk the Dog','How are you'];
 //const element = React.createElement('h1', null, 'Hello world');
@@ -35,36 +36,10 @@ import ReactDom from 'react-dom';
 //create a class.
 //We can create each element as a Component and combine all of them in single Main component to render 
 
-class List extends Component{
 
-  render(){
-    return(
-      <ul>
-        { this.props.tasks.map((task,index) => <li key = {index}>{task}</li>)}
-      </ul>
-    );
-  }
-}
 
-class Title extends Component{
-  render(){
-    return(
-      <h1>{this.props.title}</h1>
-    )
-  }
-}
+
 
 // We can render the Component any number of times inside another component.
-class Main extends Component{
-  render(){
-    return(
-      <div>
-        <Title title = {'ToDos'}/>
-        <List tasks = {['Mow the lawn','Walk the Dog']}/>
-        <List tasks = {['hose the driveway','finish the laundry']}/>
-      </div>
-    )
-  }
-}
 
 ReactDom.render(<Main/>,document.getElementById('root'));
