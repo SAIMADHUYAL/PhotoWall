@@ -35,11 +35,6 @@ import Main from './Components/Main';
 //React Components.
 //create a class.
 //We can create each element as a Component and combine all of them in single Main component to render 
-
-
-
-
-
 // We can render the Component any number of times inside another component.
 
 ReactDom.render(<Main/>,document.getElementById('root'));
